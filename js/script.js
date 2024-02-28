@@ -2,7 +2,7 @@
 // chiedere con prompt la parola
 let domanda = prompt ('Inserisci una parola palindroma');
 
-
+// richiamo la funzione
 palindroma (domanda);
 
 // 2
@@ -33,4 +33,66 @@ if (parola === parolaRicomposta){
 }else{
   console.log('Attenzione! Non hai scritto una parola palindroma')
 }
+}
+
+
+
+
+/////////////////////////////////////////
+let output = document.querySelector('h1');
+let risultato= '';
+let messaggio = '';
+
+// 1
+// chideo con prompt pari o dispari
+let pariDispari = prompt('Scrivi pari o dispari');
+
+// 2 chideo con prompt un numero da uno a cinque
+let utenteNumber = parseInt(prompt('Scrivi un numero da 1 a 5'));
+console.log(utenteNumber);
+
+// 3
+// richiamo variabile con numeri e creo variabile
+let numeroCasuale = randomNumber(1, 5);
+console.log(numeroCasuale);
+
+// 4 somma numeri
+let sommaNumeri = utenteNumber + numeroCasuale;
+console.log(sommaNumeri);
+
+// 5
+evenOdd();
+
+// 6
+// vincitore
+if (risultato === pariDispari){
+  messaggio = 'Hai vitno!';
+}else{
+  messaggio = 'Hai perso!';
+  console.log(messaggio);
+}
+
+output.innerHTML = `La somma dei due numeri è ${risultato}. <br> ${messaggio}`
+
+// 5
+// funciotn
+function evenOdd (){
+  if (sommaNumeri % 2 === 0){
+    risultato = 'pari';
+  }else{
+    risultato = 'dispari';
+    console.log(risultato);
+  }
+}
+
+// 3
+// function
+/**
+ * 
+ * @param {1} min 
+ * @param {5} max 
+ * @returns 
+ */
+function randomNumber (min, max){
+  return Math.ceil(Math.random() * (max - min) + min);
 }
