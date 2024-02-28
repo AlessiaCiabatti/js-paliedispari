@@ -1,4 +1,4 @@
-Palidroma & Pari e Dispari
+<!-- Palidroma & Pari e Dispari
 ===
 
 Palidroma
@@ -16,7 +16,15 @@ Creare una funzione per capire se la parola inserita è palindroma
 
 4. adesso occorre riunire le lettere, per ottenere nuovamente la stringa e per fare questo utilizzeremo il metodo .join
 
-5. dobbiamo capire se la parola iniziale è uguale alla parola finale se letta al contrario
+5. dobbiamo capire se la parola iniziale è uguale alla parola finale se letta al contrario -->
+
+Palindroma
+===
+1. chiedere con un prompt di scrivere una parola palindroma
+
+2. verificare con una function che la parola inserita sia palindroma
+  - la prima e l'ultima lettera della parola devono essere uguali, e così via...
+
 
 Pari e Dispari
 ===
